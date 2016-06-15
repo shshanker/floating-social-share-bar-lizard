@@ -1,0 +1,156 @@
+@font-face {
+	font-family: 'icomoon';
+	src: url('fonts/icomoon.eot?9dogdj');
+	src: url('fonts/icomoon.eot?9dogdj#iefix') format('embedded-opentype'),  url('fonts/icomoon.ttf?9dogdj') format('truetype'),  url('fonts/icomoon.woff?9dogdj') format('woff'),  url('fonts/icomoon.svg?9dogdj#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+ [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+ speak: none;
+ font-style: normal;
+ font-weight: normal;
+ font-variant: normal;
+ text-transform: none;
+ line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+.icon-envelop:before {
+	content: "\e945";
+}
+.icon-link:before {
+	content: "\e9cb";
+}
+.icon-share2:before {
+	content: "\ea82";
+}
+.icon-google-plus:before {
+	content: "\ea8b";
+}
+.icon-facebook:before {
+	content: "\ea90";
+}
+.icon-twitter:before {
+	content: "\ea96";
+}
+.icon-tumblr:before {
+	content: "\eab9";
+}
+.icon-linkedin2:before {
+	content: "\eaca";
+}
+.icon-share2:before{
+	color:#fff;
+	position:absolute;
+	left:0;
+	right:0;
+	text-align:center;
+	top:12px;
+}
+.awfss-social-link {
+	list-style: none;
+	position: fixed;	
+	z-index: 99999;
+	padding: 0px;
+	margin: 0px;
+	width:51px;
+}
+.awfss-social-link ul li.awfss-li {
+	/* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	/* ...and now for the proper property */
+	transition: .5s;
+}
+.awfss-social-link ul li.awfss-li.awfss-social-link-icon {
+	background: #125688;
+}
+.awfss-social-link ul.awfss-social-link-lists li.awfss-li{
+	text-align:center;
+	list-style:none;
+}
+.awfss-social-link ul li.awfss-li.envelope {
+	background: #125688;
+}
+.awfss-social-link ul li.awfss-li.facebook {
+	background: #3b5998;
+}
+.awfss-social-link ul li.awfss-li.twitter {
+	background: #55acee;
+}
+.awfss-social-link ul li.awfss-li.linkedin {
+	background: #007bb5;
+}
+.awfss-social-link ul li.awfss-li.googleplus {
+	background: #dd4b39;
+}
+.awfss-social-link ul li.awfss-li.tumblr {
+	background: #32506d;
+}
+.awfss-social-link ul li.awfss-li.linkurl {
+	background: #fbad50;
+}
+.awfss-social-link ul li a.awfss-icon {
+	/*padding:15px 0;*/
+	color: #efefef;
+	padding: 15px;
+	display:block;
+}
+.awfss-social-link ul li a.awfss-icon:hover {
+	/*padding:15px 0;*/
+	color: #fff;
+}
+.awfss-social-link-main-icon{
+	cursor:pointer;
+	margin-bottom:45px;
+}
+ul.awfss-social-link-main-icon li.awfss-li {
+	float: left;
+	list-style: none;
+	padding: 0;
+	height: 45px;	
+}
+.awfss-social-link-lists {
+	overflow:hidden;
+    max-height:0;
+    -webkit-transition:max-height 500ms ease;
+    -moz-transition:max-height 500ms ease;
+    -o-transition:max-height 500ms ease;
+    transition:max-height 500ms ease;
+}
+.awfss-social-link-lists.active {
+	max-height:100vh;
+}
+/*.awfss-social-link-lists.inactive{
+	opacity:0;
+	
+}*/
+
+.awfss-social-link ul{
+	clear:both;
+	margin:0;
+}
+@media only screen and (max-width:767px){
+	.awfss-social-link {
+		width:35px;
+	}
+	.icon-share2::before{
+		top:9px;
+	}
+	ul.awfss-social-link-main-icon li.awfss-li{
+		height:33px;
+	}
+	.awfss-social-link ul li a.awfss-icon{
+		padding:9px;
+	}
+
+}
